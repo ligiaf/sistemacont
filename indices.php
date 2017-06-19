@@ -107,7 +107,7 @@ if (isset($_POST['envia_dado'])) {
                         <a href="index.html" ><i class="fa fa-home nav_icon"></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="indices.html" class="active"><i class="fa fa-table nav_icon"></i>Calcular Índices</a>
+                        <a href="indices.php" class="active"><i class="fa fa-table nav_icon"></i>Calcular Índices</a>
                     </li>
                     <li>
                         <a href="graficos.html"><i class="fa fa-bar-chart nav_icon"></i>Gráficos</a>
@@ -333,7 +333,7 @@ if (isset($_POST['envia_dado'])) {
                 <div class="bs-example widget-shadow" data-example-id="hoverable-table">
                     <h4>Índices calculados:</h4>
                     <table class="table table-hover"> <thead> <tr> <th>Quocientes</th> <th>Índice</th> <th>Análise</th> </tr> </thead> <tbody> <tr>
-                            <th scope="row">Cobertura de juros com caixa = FCO antes de juros e impostos / juros</th> <td><?php if(isset($resultado)) echo $resultado[0]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Cobertura de juros com caixa = FCO antes de juros e impostos / juros</th> <td><?php if(isset($resultado)) echo $resultado[0]?></td> <td>   </td> </tr> <tr>
                             <th scope="row">Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[1]?></td> <td>AAAAAAAA</td> </tr> <tr>
                             <th scope="row">Cobertura de dividendos com caixa = FCO / dividendos totais</th> <td><?php if(isset($resultado)) echo $resultado[2]?></td> <td>AAAAAAAA</td> </tr> <tr>
                             <th scope="row">Qualidade das vendas = caixa das vendas / vendas</th> <td><?php if(isset($resultado)) echo $resultado[3]?></td> <td>AAAAAAAA</td> </tr> <tr>
@@ -342,19 +342,21 @@ if (isset($_POST['envia_dado'])) {
                             <th scope="row">Investimento/financiamento = fluxo de caixa líquido para investimentos / fluxo de caixa líquido de financiamentos</th> <td><?php if(isset($resultado)) echo $resultado[6]?></td> <td>AAAAAAAA</td> </tr> <tr>
                             <th scope="row">Retorno do caixa sobre os ativos =  FCO antes juros e impostos / ativos totais</th> <td><?php if(isset($resultado)) echo $resultado[7]?></td> <td>AAAAAAAA</td> </tr> <tr>
                             <th scope="row">Retorno sobre passivo e patrimônio líquido = FCO / (patrimônio líquido + exigível a longo prazo)</th> <td><?php if(isset($resultado)) echo $resultado[8]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[9]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[10]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[11]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[12]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[13]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[14]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[15]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[16]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[17]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[18]?></td> <td>AAAAAAAA</td> </tr> <tr>
-                            <th scope="row">//Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[19]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Retorno sobre o patrimônio líquido = FCO / patrimônio líquido</th> <td><?php if(isset($resultado)) echo $resultado[9]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                           </tr> </tbody> </table>
 
-                            <th scope="row">eeeeeeeeeeeeee</th> <td>rrrrrrrrrrrrrrrr</td> <td>ooooooooooooooooooooo</td> </tr> </tbody> </table>
+                    <table class="table table-hover"> <thead> <tr> <th>Quocientes</th> <th>Índice</th> <th>Análise</th> </tr> </thead> <tbody> <tr>
+                            <th scope="row">Cobertura de juros com caixa = FCO antes de juros e impostos / juros</th> <td><?php if(isset($resultado)) echo $resultado[10]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[11]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Cobertura de dividendos com caixa = FCO / dividendos totais</th> <td><?php if(isset($resultado)) echo $resultado[12]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Qualidade das vendas = caixa das vendas / vendas</th> <td><?php if(isset($resultado)) echo $resultado[13]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Qualidade do resultado =  FCO / resultado operacional</th> <td><?php if(isset($resultado)) echo $resultado[14]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Aquisições de capital = (FCO - dividendo total) / caixa pago por investimento de capital</th> <td><?php if(isset($resultado)) echo $resultado[15]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Investimento/financiamento = fluxo de caixa líquido para investimentos / fluxo de caixa líquido de financiamentos</th> <td><?php if(isset($resultado)) echo $resultado[16]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Retorno do caixa sobre os ativos =  FCO antes juros e impostos / ativos totais</th> <td><?php if(isset($resultado)) echo $resultado[17]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Retorno sobre passivo e patrimônio líquido = FCO / (patrimônio líquido + exigível a longo prazo)</th> <td><?php if(isset($resultado)) echo $resultado[18]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            <th scope="row">Retorno sobre o patrimônio líquido = FCO / patrimônio líquido</th> <td><?php if(isset($resultado)) echo $resultado[19]?></td> <td>AAAAAAAA</td> </tr> <tr>
+                            </tr> </tbody> </table>
 
                 </div>
             </div>
