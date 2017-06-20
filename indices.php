@@ -30,6 +30,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!--animate-->
     <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/wow.min.js"></script>
+     <link rel="icon" href="images/EFEI.png">
     <script>
         new WOW().init();
     </script>
@@ -329,7 +330,7 @@ if (isset($_POST['envia_dado'])) {
 
                 <div class="bs-example widget-shadow" data-example-id="hoverable-table">
                     <h4>Índices calculados:</h4>
-                    <table class="table table-hover"> <thead> <tr> <th>Quocientes</th> <th>Índice</th> <th>Análise</th> </tr> </thead> <tbody> <tr>
+                    <table class="table table-hover"> <thead> <tr> <th>Quocientes Ano 1</th> <th>Índice</th> <th>Análise</th> </tr> </thead> <tbody> <tr>
                             <th scope="row">Cobertura de juros com caixa = FCO antes de juros e impostos / juros</th> <td><?php if(isset($resultado)) echo $resultado[0]?></td> <td> O índice de cobertura de juros com caixa informa o número de períodosque  as  saídas  de  caixa  pelosjuros  são  cobertas  pelos  fluxosde  FCO. </td> </tr> <tr>
                             <th scope="row">Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[1]?></td> <td> O  índice  de  cobertura  de dívidas  com  caixa  serve  para  revelar  o número de anos que, no nível dos fluxos de caixa atuais, seriam necessários para quitar todo o exigível.  </td> </tr> <tr>
                             <th scope="row">Cobertura de dividendos com caixa = FCO / dividendos totais</th> <td><?php if(isset($resultado)) echo $resultado[2]?></td> <td>O  quociente  de  cobertura de  dividendos  com  caixa  fornece  evidência  da  capacidade  de  pagar  dividendos  preferenciais  e ordinários  atuais  com  base  no  fluxo  de  FCO normal.  </td> </tr> <tr>
@@ -342,7 +343,7 @@ if (isset($_POST['envia_dado'])) {
                             <th scope="row">Retorno sobre o patrimônio líquido = FCO / patrimônio líquido</th> <td><?php if(isset($resultado)) echo $resultado[9]?></td> <td>O  retorno  sobre  o patrimônio  líquido  mede  a  taxa  de  recuperação de  caixa  dos  investimentos  realizados  pelos acionistas. </td> </tr> <tr>
                            </tr> </tbody> </table>
 
-                    <table class="table table-hover"> <thead> <tr> <th>Quocientes</th> <th>Índice</th> <th>Análise</th> </tr> </thead> <tbody> <tr>
+                    <table class="table table-hover"> <thead> <tr> <th>Quocientes Ano 2</th> <th>Índice</th> <th>Análise</th> </tr> </thead> <tbody> <tr>
                             <th scope="row">Cobertura de juros com caixa = FCO antes de juros e impostos / juros</th> <td><?php if(isset($resultado)) echo $resultado[10]?></td> <td> O índice de cobertura de juros com caixa informa o número de períodos que  as  saídas  de  caixa  pelos juros  são  cobertas  pelos  fluxosde  FCO</td> </tr> <tr>
                             <th scope="row">Cobertura de dívidas com caixa= (FCO – dividendo total) / exigível</th> <td><?php if(isset($resultado)) echo $resultado[11]?></td> <td> O  índice  de  cobertura  de dívidas  com  caixa  serve  para  revelar  o número de anos que, no nível dos fluxos de caixa atuais, seriam necessários para quitar todo o exigível. </td> </tr> <tr>
                             <th scope="row">Cobertura de dividendos com caixa = FCO / dividendos totais</th> <td><?php if(isset($resultado)) echo $resultado[12]?></td> <td>O  quociente  de  cobertura de  dividendos  com  caixa  fornece  evidência  da  capacidade  de  pagar  dividendos  preferenciais  e ordinários  atuais  com  base  no  fluxo  de  FCO normal.</td> </tr> <tr>
