@@ -108,10 +108,10 @@ if (isset($_POST['envia_dado'])) {
                         <a href="indices.php" class="active"><i class="fa fa-table nav_icon"></i>Calcular Índices</a>
                     </li>
                     <li>
-                        <a href="graficos.html"><i class="fa fa-bar-chart nav_icon"></i>Gráficos</a>
+                        <a href="graficos.html" target="_blank"><i class="fa fa-bar-chart nav_icon"></i>Gráficos</a>
                     </li>
                     <li>
-                        <a href="sobre.html" ><i class="fa fa-file-text-o nav_icon"></i>Sobre</a>
+                        <a href="sobre.html" target="_blank"><i class="fa fa-file-text-o nav_icon"></i>Sobre</a>
                     </li>
                 </ul>
                 <div class="clearfix"> </div>
